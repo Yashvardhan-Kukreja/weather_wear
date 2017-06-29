@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    android:paddingTop="50dp"
+    android:orientation="vertical"
+    tools:context="com.example.yash1300.socialnetwork.Registration">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme2"
+        android:textColorHint="#ffffff"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/registerFirst"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:textColorHint="#ffffff"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="#ffffff"
+        android:theme="@style/AppTheme2"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="250dp"
+            android:id="@+id/registerLast"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:backgroundTint="#ffffff"
+            android:textColorHint="#ffffff"/>
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:theme="@style/AppTheme2"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff">
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#ffffff"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:textColor="#ffffff"
+                android:id="@+id/registerEmail"
+                android:textColorHint="#ffffff"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2"
+        android:padding="5dp"
+        android:textColorHint="#ffffff">
+        <EditText
+            android:layout_width="250dp"
+            android:inputType="numberSigned"
+            android:layout_height="wrap_content"
+            android:hint="Enter the age"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/registerAge"
+            android:backgroundTint="#ffffff"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="#ffffff"
+        android:padding="5dp"
+        android:theme="@style/AppTheme2"
+        app:passwordToggleEnabled="false"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:hint="Enter the password"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/registerPassword"
+            android:inputType="textPassword"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:textColorHint="#ffffff"
+        android:theme="@style/AppTheme2"
+        android:paddingBottom="30dp"
+        app:passwordToggleEnabled="false"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:hint="Confirm Password"
+            android:id="@+id/registerConfirm"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPassword"
+            android:backgroundTint="#ffffff"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/registerbtn"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/custom_login_button"/>
+    </LinearLayout>
+
+</LinearLayout>

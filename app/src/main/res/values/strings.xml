@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Social Network</string>
+    <string name="not_registered_yet"><u>Not registered yet? Click here to register yourself</u></string>
+</resources>

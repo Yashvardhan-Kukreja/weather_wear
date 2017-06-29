@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2196f3"
+    android:layout_height="match_parent"
+    tools:context="com.example.yash1300.socialnetwork.LoginSuccess">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello, Yashvardhan Kukreja"
+    android:textAlignment="center"
+    android:textColor="#ffffff"
+    android:textSize="30sp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="77dp"
+    android:id="@+id/greeting" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textColor="#ffffff"
+        android:id="@+id/changePasswordbtn"
+        android:background="@drawable/custom_login_button"
+        android:layout_below="@+id/greeting"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Account"
+        android:textColor="#ffffff"
+        android:id="@+id/delAccountbtn"
+        android:background="@drawable/custom_login_button"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/changePasswordbtn"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:id="@+id/logoutbtn"
+        android:background="@drawable/custom_login_button"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/delAccountbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp" />
+</RelativeLayout>

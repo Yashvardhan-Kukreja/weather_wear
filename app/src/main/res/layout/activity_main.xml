@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196f3"
+    android:paddingTop="20dp"
+    tools:context="com.example.yash1300.socialnetwork.MainActivity">
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:src="@drawable/comptwo"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/sometext"
+        android:layout_centerHorizontal="true" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/sometext"
+    android:textSize="20sp"
+    android:textColor="#ffffff"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="210dp"
+        android:layout_alignParentTop="true"
+        android:theme="@style/AppTheme2"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textInputLayout">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailid"
+            android:hint="Enter the Username"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2"
+        app:passwordToggleTint="#a9ffffff"
+        android:shadowColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_alignStart="@+id/textInputLayout"
+        android:id="@+id/textInputLayout2">
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:shadowColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textColorHighlight="#ffffff"
+            android:foregroundTint="#ffffff"
+            android:textColorLink="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:hint="Enter the password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbtn"
+        android:text="Log in"
+        android:textColor="#ffffff"
+        android:background="@drawable/custom_login_button"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="@string/not_registered_yet"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+</RelativeLayout>
